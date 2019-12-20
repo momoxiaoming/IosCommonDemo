@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Common.h"
+@interface SceneDelegate :BaseAppDelegate
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 
-@property (strong, nonatomic) UIWindow * window;
 
 @end
 

@@ -6,11 +6,14 @@
 //  Copyright © 2019 张小明. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import <UIKit/UIKit.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseAppDelegate  : UIResponder<UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 + (instancetype)sharedAppDelegate;
 
