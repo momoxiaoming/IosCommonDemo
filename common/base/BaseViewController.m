@@ -75,7 +75,10 @@
     [_naviView addSubview:lineView];
 }
 
-
+- (void)doReturn{
+    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)nothingBtnClick{
     
 }
