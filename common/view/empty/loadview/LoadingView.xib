@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="eCn-VE-9Em">
+                    <rect key="frame" x="112" y="140" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oph-wn-ooK">
+                    <rect key="frame" x="142" y="141" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oph-wn-ooK" secondAttribute="trailing" constant="30" id="1cw-Mc-PFl"/>
+                <constraint firstItem="oph-wn-ooK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2x4-A9-e6C"/>
+                <constraint firstItem="oph-wn-ooK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="15" id="B1P-9C-YPY"/>
+                <constraint firstItem="eCn-VE-9Em" firstAttribute="centerY" secondItem="oph-wn-ooK" secondAttribute="centerY" id="B8J-yc-vul"/>
+                <constraint firstItem="oph-wn-ooK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="SUb-89-sZE"/>
+                <constraint firstItem="oph-wn-ooK" firstAttribute="leading" secondItem="eCn-VE-9Em" secondAttribute="trailing" constant="10" id="tYE-vb-9we"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadText" destination="oph-wn-ooK" id="i5e-hx-D0d"/>
+                <outlet property="loadView" destination="eCn-VE-9Em" id="9Ho-3X-7rQ"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="100"/>
+        </view>
+    </objects>
+</document>

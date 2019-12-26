@@ -12,6 +12,12 @@
 #import "UIView+Additions.h"
 #import "BaseAppDelegate.h"
 #import "BaseViewController.h"
+#import "BaseNavigationController.h"
+
+//一些基本配置
+
+#define DEF_TEXT_DEFULT_COLOR (DEF_RGB_COLOR(@"#434343",1))
+
 
 
 
@@ -31,9 +37,10 @@
 //屏幕高度
 #define DEF_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 //状态栏高度
-#define DEF_STATUS_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height-20)
+#define DEF_STATUS_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 //导航栏高度
-#define DEF_NAV_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height-20)
+#define DEF_NAV_HEIGHT (self.navigationController.navigationBar.frame.size.height)
+
 
 
 //颜色,透明度 DEF_RGB_COLOR(@"#333333",1)
@@ -60,6 +67,9 @@
 #define DEF_BOX_CACHE_PATH [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 //获取temp
 #define DEF_TEMP_PATH NSTemporaryDirectory()
+
+//获取app名称
+#define DEF_APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 
 
 
@@ -88,6 +98,7 @@
 #define iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
 // 判断是否为iPhoneXS MAX - 6.5 inch
 #define iPhoneXSMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
 
 
 //--------------生成随机数---------------

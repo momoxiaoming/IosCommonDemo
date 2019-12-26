@@ -12,6 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
 
+
+/**
+ 隐藏导航栏
+ */
+-(void)isHidenNavigationBar:(BOOL)hiden;
+
+/**
+ push 返回
+ */
+-(void)goPushBack;
 @end
 
 NS_ASSUME_NONNULL_END

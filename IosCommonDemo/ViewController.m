@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Common.h"
+#import "SecondViewController.h"
+#import "ViewTools.h"
 @interface ViewController ()
 
 @end
@@ -16,28 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+   
     self.view.backgroundColor=[UIColor redColor];
+    UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(DEF_SCREEN_WIDTH/2-50, DEF_SCREEN_HEIGHT/2-25, 100, 50)];
+    btn.backgroundColor=[UIColor blueColor];
+    [btn addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
-    UIView *textV=[[UIView alloc]initWithFrame:CGRectMake(20, 20, 100, 100)];
+    [btn setTitle:@"next" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
     
-    textV.backgroundColor=[UIColor whiteColor];
-    [self.view addSubview:textV];
+    self.title=@"首页";
     
-    DEF_VIEW_RADIUS(textV, 10, 0, [UIColor blackColor]);
-    
-    
-    NSDictionary *dict=@{@"name":@"123"};
-    
-    NSString* str= DEF_DICT_TO_JSON(dict);
 
     
-    
-    NSLog(@"str==%@",DEF_STR_TO_B64(str));
-    
-    
+    [ViewTools indictorShow:self.view text:@"数据加载中"];
 }
-
+-(void)next{
+    
+    [[BaseAppDelegate sharedAppDelegate] pushViewController:[SecondViewController new] animated:YES];
+}
 
 @end

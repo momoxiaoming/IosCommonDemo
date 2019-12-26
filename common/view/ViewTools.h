@@ -7,14 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TextNoDataView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewTools : NSObject
 
-+(void)showTextNoData:(UIView *)superView text1:(NSString *)str1 text2:(NSString *)str2 ;
++(void)showTextNoData:(UIView *)superView text:(NSString *)text ;
 
 +(void)hiddenTextNoData:(UIView *)superView;
+
+/** 显示无数据/无网络 */
++(void)showImgNoData:(UIView *)superView imgName:(NSString *)imgName text:(NSString *)text;
+/** 隐藏无数据/无网络 */
++(void)hiddenImgNoData:(UIView *)superView;
+
+/** 指示器显示 */
++(void)indictorShow:(UIView *)superView text:(NSString*)text;
+/** 指示器消失 */
++(void)indictorHide:(UIView *)superView;
+
 @end
 
 NS_ASSUME_NONNULL_END

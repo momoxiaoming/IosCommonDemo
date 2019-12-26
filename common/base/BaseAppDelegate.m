@@ -7,7 +7,7 @@
 //
 
 #import "BaseAppDelegate.h"
-
+#import "BaseNavigationController.h"
 @implementation BaseAppDelegate
 
 + (instancetype)sharedAppDelegate
@@ -66,7 +66,7 @@
     
     if (vc.navigationController == nil)
     {
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
         [top presentViewController:nav animated:animated completion:completion];
     }
     else
