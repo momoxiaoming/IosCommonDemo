@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** 指示器消失 */
 +(void)indictorHide:(UIView *)superView;
 
++ (void)lineViewWithFrame:(CGRect)frame andColor:(UIColor *)color andView:(UIView *)view;
+
 @end
 
 NS_ASSUME_NONNULL_END

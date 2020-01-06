@@ -17,16 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedAppDelegate;
 
-- (UIViewController *)topViewController;
-
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
-
-- (UIViewController *)popViewController:(BOOL)animated;
-
-- (void)presentViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion;
-
-- (void)dismissViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -109,4 +109,10 @@
   
 }
 
+
++ (void)lineViewWithFrame:(CGRect)frame andColor:(UIColor *)color andView:(UIView *)view{
+    UIView *lineView = [[UIView alloc]initWithFrame:frame];
+    lineView.backgroundColor = color;
+    [view addSubview:lineView];
+}
 @end

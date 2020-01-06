@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		49127998FC1AB3765A581BBE /* libPods-IosCommonDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7848FB0319A41D0B0DE54302 /* libPods-IosCommonDemoUITests.a */; };
 		7202CFE7CC57D191FED62942 /* libPods-IosCommonDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE0F5C2C04F66DAD2139175 /* libPods-IosCommonDemo.a */; };
+		7A35D31C23C34A650010CD7E /* icon_arrow_leftsssa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A35D31B23C34A650010CD7E /* icon_arrow_leftsssa.png */; };
+		7A35D31F23C363B20010CD7E /* BaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35D31D23C363B20010CD7E /* BaseAppDelegate.m */; };
 		7A4A05D623AB7C800047E1F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A05D523AB7C800047E1F4 /* AppDelegate.m */; };
 		7A4A05D923AB7C800047E1F4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A05D823AB7C800047E1F4 /* SceneDelegate.m */; };
 		7A4A05DC23AB7C800047E1F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A05DB23AB7C800047E1F4 /* ViewController.m */; };
@@ -23,7 +25,6 @@
 		7A4A061323AC79F30047E1F4 /* navi_backImg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A061123AC79F20047E1F4 /* navi_backImg@3x.png */; };
 		7A4A061423AC79F30047E1F4 /* navi_backImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A061223AC79F30047E1F4 /* navi_backImg@2x.png */; };
 		7A4A061923AC9DFE0047E1F4 /* LanAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A061823AC9DFE0047E1F4 /* LanAES.m */; };
-		7A4A061D23AC9F3B0047E1F4 /* BaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A061C23AC9F3B0047E1F4 /* BaseAppDelegate.m */; };
 		7A5FAE5E23B49A9800F58BC6 /* AFHttpSessionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FAE5D23B49A9800F58BC6 /* AFHttpSessionClient.m */; };
 		7A8BF1C423B0A54C004B165F /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8BF1C323B0A54B004B165F /* BaseNavigationController.m */; };
 		7A8BF1C723B0AA39004B165F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8BF1C623B0AA39004B165F /* SecondViewController.m */; };
@@ -51,6 +52,9 @@
 		1F62AE39F6A213A314A73277 /* Pods-IosCommonDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosCommonDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosCommonDemoUITests/Pods-IosCommonDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CE0F5C2C04F66DAD2139175 /* libPods-IosCommonDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosCommonDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7848FB0319A41D0B0DE54302 /* libPods-IosCommonDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosCommonDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A35D31B23C34A650010CD7E /* icon_arrow_leftsssa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_arrow_leftsssa.png; sourceTree = "<group>"; };
+		7A35D31D23C363B20010CD7E /* BaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAppDelegate.m; sourceTree = "<group>"; };
+		7A35D31E23C363B20010CD7E /* BaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAppDelegate.h; sourceTree = "<group>"; };
 		7A4A05D123AB7C800047E1F4 /* IosCommonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosCommonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4A05D423AB7C800047E1F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7A4A05D523AB7C800047E1F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,8 +81,6 @@
 		7A4A061223AC79F30047E1F4 /* navi_backImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_backImg@2x.png"; sourceTree = "<group>"; };
 		7A4A061723AC9DFE0047E1F4 /* LanAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanAES.h; sourceTree = "<group>"; };
 		7A4A061823AC9DFE0047E1F4 /* LanAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanAES.m; sourceTree = "<group>"; };
-		7A4A061B23AC9F3B0047E1F4 /* BaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppDelegate.h; sourceTree = "<group>"; };
-		7A4A061C23AC9F3B0047E1F4 /* BaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAppDelegate.m; sourceTree = "<group>"; };
 		7A5FAE5C23B49A9700F58BC6 /* AFHttpSessionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHttpSessionClient.h; sourceTree = "<group>"; };
 		7A5FAE5D23B49A9800F58BC6 /* AFHttpSessionClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHttpSessionClient.m; sourceTree = "<group>"; };
 		7A8BF1C223B0A54B004B165F /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -205,10 +207,10 @@
 		7A4A05FD23AB7DAA0047E1F4 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				7A35D31E23C363B20010CD7E /* BaseAppDelegate.h */,
+				7A35D31D23C363B20010CD7E /* BaseAppDelegate.m */,
 				7A4A05FE23AB7E480047E1F4 /* BaseViewController.h */,
 				7A4A05FF23AB7E480047E1F4 /* BaseViewController.m */,
-				7A4A061B23AC9F3B0047E1F4 /* BaseAppDelegate.h */,
-				7A4A061C23AC9F3B0047E1F4 /* BaseAppDelegate.m */,
 				7A8BF1C223B0A54B004B165F /* BaseNavigationController.h */,
 				7A8BF1C323B0A54B004B165F /* BaseNavigationController.m */,
 			);
@@ -227,6 +229,7 @@
 		7A4A061523AC79F70047E1F4 /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
+				7A35D31B23C34A650010CD7E /* icon_arrow_leftsssa.png */,
 				7A4A061223AC79F30047E1F4 /* navi_backImg@2x.png */,
 				7A4A061123AC79F20047E1F4 /* navi_backImg@3x.png */,
 			);
@@ -393,6 +396,7 @@
 				7A4A061323AC79F30047E1F4 /* navi_backImg@3x.png in Resources */,
 				7A8BF20723B21693004B165F /* LoadingView.xib in Resources */,
 				7A4A05E123AB7C810047E1F4 /* Assets.xcassets in Resources */,
+				7A35D31C23C34A650010CD7E /* icon_arrow_leftsssa.png in Resources */,
 				7A4A05DF23AB7C800047E1F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,9 +513,9 @@
 				7A4A061923AC9DFE0047E1F4 /* LanAES.m in Sources */,
 				7A8BF1C423B0A54C004B165F /* BaseNavigationController.m in Sources */,
 				7A4A060723AB9FA10047E1F4 /* UIView+Additions.m in Sources */,
+				7A35D31F23C363B20010CD7E /* BaseAppDelegate.m in Sources */,
 				7A8BF1F723B0E45B004B165F /* TextNoDataView.m in Sources */,
 				7A8BF1FF23B1C2F5004B165F /* TextAndImageView.m in Sources */,
-				7A4A061D23AC9F3B0047E1F4 /* BaseAppDelegate.m in Sources */,
 				7A4A05DC23AB7C800047E1F4 /* ViewController.m in Sources */,
 				7A5FAE5E23B49A9800F58BC6 /* AFHttpSessionClient.m in Sources */,
 				7A4A060023AB7E480047E1F4 /* BaseViewController.m in Sources */,

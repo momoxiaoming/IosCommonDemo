@@ -11,6 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
+{
+    NSString * _title;  //导航栏标题
+}
+@property (nonatomic,strong)UIView * navtionView;
+
+
 
 
 /**
@@ -19,9 +25,23 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)isHidenNavigationBar:(BOOL)hiden;
 
 /**
- push 返回
+ 返回上一层控制器, 模态和push都支持
  */
--(void)goPushBack;
+-(void)toBack;
+
+/**
+ 跳转到栈中某个特定的控制器,只支持push过来的控制器
+ */
+-(void)toBackTargetController:(UIViewController*)controller;
+/**
+ push 前往
+ */
+-(void)goPushNext:(UIViewController*)targetController;
+
+/**
+ 修改根控制器
+ */
+-(void)changRootController:(UIViewController*)viewController;
 @end
 
 NS_ASSUME_NONNULL_END

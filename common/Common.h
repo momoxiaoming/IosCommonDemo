@@ -40,7 +40,8 @@
 #define DEF_STATUS_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 //导航栏高度
 #define DEF_NAV_HEIGHT (self.navigationController.navigationBar.frame.size.height)
-
+//导航栏高度+状态栏高度
+#define DEF_NAV_AND_STATUS_HEIGHT (DEF_STATUS_HEIGHT+DEF_NAV_HEIGHT)
 
 
 //颜色,透明度 DEF_RGB_COLOR(@"#333333",1)
