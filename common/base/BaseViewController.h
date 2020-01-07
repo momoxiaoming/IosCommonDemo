@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
     NSString * _title;  //导航栏标题
 }
 @property (nonatomic,strong)UIView * navtionView;
+@property (nonatomic,strong)UIView * contentView;
 
 
 

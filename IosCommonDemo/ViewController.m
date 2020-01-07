@@ -20,12 +20,11 @@
     [super viewDidLoad];
    
     
+   
     
-    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, DEF_NAV_AND_STATUS_HEIGHT, DEF_SCREEN_WIDTH, DEF_SCREEN_HEIGHT-DEF_NAV_AND_STATUS_HEIGHT)];
+   
     
-    view.backgroundColor=[UIColor redColor];
-    
-    [self.view addSubview:view];
+  
     
     UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(DEF_SCREEN_WIDTH/2-50, DEF_SCREEN_HEIGHT/2-25, 100, 50)];
     btn.backgroundColor=[UIColor blueColor];
@@ -33,7 +32,7 @@
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
     [btn setTitle:@"next" forState:UIControlStateNormal];
-    [view addSubview:btn];
+    [self.contentView addSubview:btn];
     
     self.title=@"首页";
     

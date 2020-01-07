@@ -39,6 +39,9 @@
     self.view.backgroundColor =bg_color;
     [self isHidenNavigationBar:YES];
     [self navtion];
+    self.contentView=[[UIView alloc]initWithFrame:CGRectMake(0, DEF_NAV_AND_STATUS_HEIGHT, DEF_SCREEN_WIDTH, DEF_SCREEN_HEIGHT)];
+    
+    [self.view addSubview:self.contentView];
 }
 
 - (void)setTitle:(NSString *)title{
@@ -49,9 +52,7 @@
 }
 
 -(void)navtion{
-    NSLog(@"状态栏高度:%f",DEF_STATUS_HEIGHT);
-    NSLog(@"导航栏栏高度:%f",DEF_NAV_HEIGHT);
-    NSLog(@"和高度:%f",DEF_NAV_AND_STATUS_HEIGHT);
+    
     
     self.navtionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, DEF_SCREEN_WIDTH, DEF_STATUS_HEIGHT+DEF_NAV_HEIGHT)];
     self.navtionView.backgroundColor = naviTColor;
