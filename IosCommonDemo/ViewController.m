@@ -19,13 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    
-   
-    
-   
-    
-  
-    
     UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(DEF_SCREEN_WIDTH/2-50, DEF_SCREEN_HEIGHT/2-25, 100, 50)];
     btn.backgroundColor=[UIColor blueColor];
     [btn addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];

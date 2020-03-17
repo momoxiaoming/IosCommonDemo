@@ -11,16 +11,10 @@
 #import "ViewTools.h"
 
 
-#define naviTColor DEF_RGB_COLOR(@"#ffffff", 1)  //导航栏颜色
-#define bg_color DEF_RGB_COLOR(@"#f3f3f3", 1)  //页面颜色
-#define title_color DEF_RGB_COLOR(@"#000000", 1)  //标题颜色
 
 
 
-//app主色调s
-#define normalColors [UIColor colorWithRed:255/255.0 green:97/255.0 blue:49/255.0 alpha:1]
-#define oldNormalColors [UIColor colorWithRed:255/255.0 green:221/255.0 blue:0/255.0 alpha:1]
-#define Line_Cor [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]
+
 
 @interface BaseViewController ()
 @property (nonatomic,strong)UILabel *titleLabel;
@@ -36,7 +30,7 @@
     if ([[UIDevice currentDevice] systemVersion].floatValue >= 11.0) {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.view.backgroundColor =bg_color;
+    self.view.backgroundColor =DEF_PAGE_BG_COLOR;
     [self isHidenNavigationBar:YES];
     [self navtion];
     self.contentView=[[UIView alloc]initWithFrame:CGRectMake(0, DEF_NAV_AND_STATUS_HEIGHT, DEF_SCREEN_WIDTH, DEF_SCREEN_HEIGHT)];
@@ -55,12 +49,12 @@
     
     
     self.navtionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, DEF_SCREEN_WIDTH, DEF_STATUS_HEIGHT+DEF_NAV_HEIGHT)];
-    self.navtionView.backgroundColor = naviTColor;
+    self.navtionView.backgroundColor = DEF_NAV_BG_COLOR;
     self.titleLabel = [[UILabel alloc]init];
     self.titleLabel.text = @"编辑资料";
     [self.titleLabel setFont:[UIFont systemFontOfSize:16]];
     
-    self.titleLabel.textColor = title_color;
+    self.titleLabel.textColor = DEF_NAV_TITLE_COLOR;
     self.titleLabel.frame = CGRectMake(0,DEF_STATUS_HEIGHT,DEF_SCREEN_WIDTH,DEF_NAV_HEIGHT);
     
     // label.center = navtion.center;

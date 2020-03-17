@@ -34,6 +34,8 @@
 		7A8BF20123B1C301004B165F /* TextAndImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8BF20023B1C301004B165F /* TextAndImageView.xib */; };
 		7A8BF20523B21675004B165F /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8BF20423B21675004B165F /* LoadingView.m */; };
 		7A8BF20723B21693004B165F /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8BF20623B21693004B165F /* LoadingView.xib */; };
+		7ADF716324209B7C0021493A /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF715F24209B7C0021493A /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7ADF716424209B7C0021493A /* UUIDKeyChainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADF716124209B7C0021493A /* UUIDKeyChainUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,10 @@
 		7A8BF20323B21675004B165F /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		7A8BF20423B21675004B165F /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		7A8BF20623B21693004B165F /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		7ADF715F24209B7C0021493A /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		7ADF716024209B7C0021493A /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		7ADF716124209B7C0021493A /* UUIDKeyChainUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDKeyChainUtil.m; sourceTree = "<group>"; };
+		7ADF716224209B7C0021493A /* UUIDKeyChainUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDKeyChainUtil.h; sourceTree = "<group>"; };
 		BC65EFB2C410CD2F0678EA10 /* Pods-IosCommonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosCommonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosCommonDemo/Pods-IosCommonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +245,7 @@
 		7A4A061623AC9DF20047E1F4 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				7ADF715E24209B5A0021493A /* uuid */,
 				7A4A061723AC9DFE0047E1F4 /* LanAES.h */,
 				7A4A061823AC9DFE0047E1F4 /* LanAES.m */,
 			);
@@ -292,6 +299,17 @@
 				7A8BF20623B21693004B165F /* LoadingView.xib */,
 			);
 			path = loadview;
+			sourceTree = "<group>";
+		};
+		7ADF715E24209B5A0021493A /* uuid */ = {
+			isa = PBXGroup;
+			children = (
+				7ADF716024209B7C0021493A /* KeychainItemWrapper.h */,
+				7ADF715F24209B7C0021493A /* KeychainItemWrapper.m */,
+				7ADF716224209B7C0021493A /* UUIDKeyChainUtil.h */,
+				7ADF716124209B7C0021493A /* UUIDKeyChainUtil.m */,
+			);
+			path = uuid;
 			sourceTree = "<group>";
 		};
 		C486B5B7049B3947901CFC3D /* Frameworks */ = {
@@ -519,7 +537,9 @@
 				7A4A05DC23AB7C800047E1F4 /* ViewController.m in Sources */,
 				7A5FAE5E23B49A9800F58BC6 /* AFHttpSessionClient.m in Sources */,
 				7A4A060023AB7E480047E1F4 /* BaseViewController.m in Sources */,
+				7ADF716424209B7C0021493A /* UUIDKeyChainUtil.m in Sources */,
 				7A4A05D623AB7C800047E1F4 /* AppDelegate.m in Sources */,
+				7ADF716324209B7C0021493A /* KeychainItemWrapper.m in Sources */,
 				7A4A060A23ABA5D50047E1F4 /* ViewTools.m in Sources */,
 				7A4A05E723AB7C810047E1F4 /* main.m in Sources */,
 				7A4A05D923AB7C800047E1F4 /* SceneDelegate.m in Sources */,
@@ -679,6 +699,7 @@
 			baseConfigurationReference = BC65EFB2C410CD2F0678EA10 /* Pods-IosCommonDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HSMBZL9GA9;
 				INFOPLIST_FILE = IosCommonDemo/Info.plist;
@@ -688,6 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.super.pwd.IosCommonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -699,7 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HSMBZL9GA9;
 				INFOPLIST_FILE = IosCommonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

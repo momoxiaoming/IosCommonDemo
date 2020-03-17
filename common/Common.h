@@ -15,8 +15,10 @@
 #import "BaseNavigationController.h"
 
 //一些基本配置
-
-#define DEF_TEXT_DEFULT_COLOR (DEF_RGB_COLOR(@"#434343",1))
+#define DEF_NAV_TITLE_COLOR (DEF_RGB_COLOR(@"#C33979",1))//导航栏标题颜色
+#define DEF_NAV_BG_COLOR (DEF_RGB_COLOR(@"#FFFFFF",1)) //导航栏背景颜色
+#define DEF_PAGE_BG_COLOR DEF_RGB_COLOR(@"#f3f3f3", 1)  //页面颜色
+#define DEF_TEXT_DEFULT_COLOR (DEF_RGB_COLOR(@"#434343",1))//默认文字颜色
 
 
 
